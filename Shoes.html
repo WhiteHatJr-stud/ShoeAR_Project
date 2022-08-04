@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Show Marker</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+  <script src="https://raw.githack.com/fcor/arjs-gestures/master/dist/gestures.js"></script>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
+  <!-- Local StyleSheet -->
+  <link href="./style.css" rel="stylesheet" />
+
+</head>
+
+<body style="margin : 0px; overflow: hidden;">
+
+  <a-scene vr-mode-ui="enabled: false" embedded arjs="sourceType: webcam; 
+    sourceWidth:1280; sourceHeight:960; 
+    displayWidth: 1280; displayHeight: 960; 
+    debugUIEnabled: false;" gesture-detector>
+
+    <!-- Camera -->
+    <a-entity camera></a-entity>
+
+    <!--Assets-->
+    <a-assets>
+      <a-asset-item id="shoe1-model" src="./Assets/ShoeModels/Shoe1/scene.gltf"></a-asset-item>
+      <a-asset-item id="shoe2-model" src="./Assets/ShoeModels/Shoe2/scene.gltf"></a-asset-item>
+      <a-asset-item id="shoe3-model" src="./Assets/ShoeModels/Shoe3/scene.gltf"></a-asset-item>
+      <a-asset-item id="shoe4-model" src="./Assets/ShoeModels/Shoe4/scene.gltf"></a-asset-item>
+    </a-assets>
+
+   
+    <!--Pattern Marker Shoe 1-->
+    <a-marker id="shoe1-marker" type="pattern" url="./Assets/ShoeMarkers/Shoe1Marker/pattern-Shoe1Image.patt" cursor="rayOrigin: mouse">
+      
+      <a-entity id="shoe1-3D-model" position="-5 0 0" scale="0.15 0.15 0.15" rotation="1 1 1"
+        gltf-model="#shoe1-model"
+        gesture-handler>
+      </a-entity>
+
+      <!--Price-->
+      <a-plane position="0 0 0" width="1.5" height="1.5" rotation="-90 0 0">
+        <a-plane position="0 0.89 0.02" width="1.49" height="0.3" rotation="0 0 0" color="#FF0000">
+          <a-entity position="0 0 0.1" rotation="0 0 0"
+            text="font:monoid;value:Price:$10.69;color:white;width: 4;height:3;align:center;"></a-entity>
+        </a-plane>
+
+        <a-entity position="0 0 0.1" rotation="0 0 0"
+          text="color: black; align: center; width: 3.5; font: monoid;
+               value:Nike Air Jordan 1">
+        </a-entity>
+
+        <a-entity position="0 -0.3 0.1" rotation="0 0 0"
+          text="color: black; align: center; width: 3.5; font: monoid;
+               value: Sizes: 7, 8, 9">
+        </a-entity>
+        
+      </a-plane>
+
+    </a-marker>
+
+    <!--Pattern Marker Shoe 2-->
+    <a-marker id="shoe2-marker" type="pattern" url="./Assets/ShoeMarkers/Shoe2Marker/pattern-Shoe2Image.patt" cursor="rayOrigin: mouse">
+    
+      
+      <a-entity id="shoe2-3D-model" position="-5 0 0" scale="0.2 0.2 0.2" rotation="1 1 1"
+        gltf-model="#shoe2-model"
+        gesture-handler>
+      </a-entity>
+
+      <!--Price-->
+      <a-plane position="0 0 0" width="1.5" height="1.5" rotation="-90 0 0">
+        <a-plane position="0 0.89 0.02" width="1.49" height="0.3" rotation="0 0 0" color="#FF0000">
+          <a-entity position="0 0 0.1" rotation="0 0 0"
+            text="font:monoid;value:Price: $10.69;color:black;width: 4;height:3;align:center;"></a-entity>
+        </a-plane>
+
+        <a-entity position="0 0 0.1" rotation="0 0 0"
+          text="color: black; align: center; width: 3.5; font: monoid;
+               value:Adidas">
+        </a-entity>
+
+        <a-entity position="0 -0.3 0.1" rotation="0 0 0"
+          text="color: black; align: center; width: 3.5; font: monoid;
+               value:Sizes: 6, 8, 9">
+        </a-entity>
+      </a-plane>
+
+    </a-marker>
+
+    <!--Pattern Marker Shoe 3-->
+    <a-marker id="shoe1-marker" type="pattern" url="./Assets/ShoeMarkers/Shoe3Marker/pattern-Shoe3Image.patt" cursor="rayOrigin: mouse">
+      
+      <a-entity id="shoe3-3D-model" position="-5 0 0" scale="20 20 20" rotation="1 1 1"
+        gltf-model="#shoe3-model"
+        gesture-handler>
+      </a-entity>
+
+      <!--Price-->
+      <a-plane position="0 0 0" width="1.5" height="1.5" rotation="-90 0 0">
+        <a-plane position="0 0.89 0.02" width="1.49" height="0.3" rotation="0 0 0" color="#FF0000">
+          <a-entity position="0 0 0.1" rotation="0 0 0"
+            text="font:monoid;value:Price: $12.69;color:black;width: 4;height:3;align:center;"></a-entity>
+        </a-plane>
+
+        <a-entity position="0 0 0.1" rotation="0 0 0"
+          text="color: black; align: center; width: 3.5; font: monoid;
+               value:Puma">
+        </a-entity>
+
+        <a-entity position="0 -0.3 0.1" rotation="0 0 0"
+          text="color: black; align: center; width: 3.5; font: monoid;
+               value:Sizes: 8, 9, 11">
+        </a-entity>
+      </a-plane>
+
+    </a-marker>
+
+    <!--Pattern Marker Shoe 4-->
+    <a-marker id="shoe4-marker" type="pattern" url="./Assets/ShoeMarkers/Shoe4Marker/pattern-Shoe4Image.patt" cursor="rayOrigin: mouse">
+      
+      <a-entity id="shoe4-3D-model" position="-5 0 0" scale="2 2 2" rotation="1 1 1"
+        gltf-model="#shoe4-model"
+        gesture-handler>
+      </a-entity>
+
+      <!--Price-->
+      <a-plane position="0 0 0" width="1.5" height="1.5" rotation="-90 0 0">
+        <a-plane position="0 0.89 0.02" width="1.49" height="0.3" rotation="0 0 0" color="#FF0000">
+          <a-entity position="0 0 0.1" rotation="0 0 0"
+            text="font:monoid;value:Price: $8.69;color:black;width: 4;height:3;align:center;"></a-entity>
+        </a-plane>
+
+        <a-entity position="0 0 0.1" rotation="0 0 0"
+          text="color: black; align: center; width: 3.5; font: monoid;
+               value:Fila">
+        </a-entity>
+
+        <a-entity position="0 -0.3 0.1" rotation="0 0 0"
+          text="color: black; align: center; width: 3.5; font: monoid;
+               value:Sizes: 6, 7, 8">
+        </a-entity>
+      </a-plane>
+
+    </a-marker>
+
+  </a-scene>
+
+</body>
+
+</html>

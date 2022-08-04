@@ -1,0 +1,11 @@
+Model Information:
+* title:	Brown Sneakers
+* source:	https://sketchfab.com/3d-models/brown-sneakers-e6c51d2e77d945d1a0efbca530fb4b5b
+* author:	yanix (https://sketchfab.com/yanix)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Brown Sneakers" (https://sketchfab.com/3d-models/brown-sneakers-e6c51d2e77d945d1a0efbca530fb4b5b) by yanix (https://sketchfab.com/yanix) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

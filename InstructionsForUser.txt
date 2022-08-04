@@ -1,0 +1,8 @@
+Steps to follow:-
+
+1) visit 
+2) Download all the markers from the "MarkersToDownload" folder.
+3) Transfer these into another device(for ex. Mobile) or you can print these markers.
+4) Choose a pair of shoe.
+5) Click the "open camera" text. Another tab will open up.
+7) Show the marker of the shoe that you chose to the camera.
